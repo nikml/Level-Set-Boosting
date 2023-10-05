@@ -130,7 +130,7 @@ def test_train_graph(errors_dict, title='Blank', ref_line = None, two_tone = Fal
         sns_plt.set_ylabel(yaxis, fontsize = 13)
         sns_plt.grid(False)
         sns_plt.patch.set_edgecolor('black')
-        sns_plt.patch.set_linewidth('1')
+        # sns_plt.patch.set_linewidth('1')
         legend = sns_plt.legend(loc = 'best', labels = legend_list)
         legend_lines = legend.get_lines()
         for i in range(len(legend_list)):
@@ -159,7 +159,7 @@ def test_train_graph(errors_dict, title='Blank', ref_line = None, two_tone = Fal
         sns_plt.set_ylabel(yaxis, fontsize = 13)
         sns_plt.grid(False)
         sns_plt.patch.set_edgecolor('black')
-        sns_plt.patch.set_linewidth('1')
+        # sns_plt.patch.set_linewidth('1')
         legend_list = []
         for column in graph_df.columns:
             if column == 'axis':
